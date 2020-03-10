@@ -70,5 +70,6 @@ if __name__ == "__main__":
 		exit(1)
 	key = f.readline().replace('key:','').strip()
 	domain = f.readline().replace('domain:','').strip()
+	pool_interval = f.readline().replace('pool_interval:','').strip()
 	f.close()
-	main(30,key,domain)
+	main(int(pool_interval),key,domain)
